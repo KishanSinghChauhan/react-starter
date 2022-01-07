@@ -1,11 +1,9 @@
-import "./styles.css";
-import Image from "./assets/images.png";
+import './styles.css'
 
 export const App = () => {
   return (
     <>
       <h1>React Starter {process.env.name}</h1>
-      <img src={Image} />
     </>
-  );
-};
+  )
+}

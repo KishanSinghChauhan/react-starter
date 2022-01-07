@@ -1,9 +1,13 @@
 module.exports = {
   parser: '@typescript-eslint/parser',
   parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
     ecmaVersion: 2020,
     sourceType: 'module',
   },
+  plugins: ['react', '@typescript-eslint', 'jsx-a11y'],
   settings: {
     react: {
       version: 'detect',
@@ -19,7 +23,6 @@ module.exports = {
     'plugin:jsx-a11y/recommended',
     'plugin:eslint-comments/recommended',
     'prettier',
-    'prettier/@typescript-eslint',
     'plugin:prettier/recommended',
   ],
   rules: {
